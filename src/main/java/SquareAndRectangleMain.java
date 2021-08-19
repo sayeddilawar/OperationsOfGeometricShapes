@@ -7,4 +7,9 @@ public class SquareAndRectangleMain {
     public double areaOfSquare() {
         return side * side;
     }
+
+    public double perimeterOfSquare()
+    {
+        return 4*side;
+    }
 }

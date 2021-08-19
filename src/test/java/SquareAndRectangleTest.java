@@ -34,5 +34,26 @@ public class SquareAndRectangleTest {
             SquareAndRectangleMain object = new SquareAndRectangleMain(-5.5);
             assertEquals(30.25, object.areaOfSquare());
         }
+
+        //Perimeter of Square
+        @DisplayName("Perimeter of Square with Positive side")
+        @Test
+        void toImplementPerimeterOfSquareWithPositiveSides()
+        {
+            SquareAndRectangleMain object = new SquareAndRectangleMain(10);
+            assertEquals(40, object.perimeterOfSquare());
+        }
+
+        @DisplayName("Perimeter of Square with Negative side")
+        @Test
+        void toImplementPerimeterOfSquareWithNegativeSides()
+        {
+            SquareAndRectangleMain object = new SquareAndRectangleMain(-10);
+            assertEquals(-40, object.perimeterOfSquare());
+        }
+
+
     }
+
+
 }
