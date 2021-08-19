@@ -38,16 +38,14 @@ public class SquareAndRectangleTest {
         //Perimeter of Square
         @DisplayName("Perimeter of Square with Positive side")
         @Test
-        void toImplementPerimeterOfSquareWithPositiveSides()
-        {
+        void toImplementPerimeterOfSquareWithPositiveSides() {
             SquareAndRectangleMain object = new SquareAndRectangleMain(10);
             assertEquals(40, object.perimeterOfSquare());
         }
 
         @DisplayName("Perimeter of Square with Negative side")
         @Test
-        void toImplementPerimeterOfSquareWithNegativeSides()
-        {
+        void toImplementPerimeterOfSquareWithNegativeSides() {
             SquareAndRectangleMain object = new SquareAndRectangleMain(-10);
             assertEquals(-40, object.perimeterOfSquare());
         }
@@ -55,5 +53,36 @@ public class SquareAndRectangleTest {
 
     }
 
+    @Nested
+    public class rectangleOperations {
+        @DisplayName("Area of Rectangle with Positive Dimensions")
+        @Test
+        void toImplementAreaOfRectangleWithPositiveDimensions() {
+            SquareAndRectangleMain object = new SquareAndRectangleMain(4, 5);
+            assertEquals(20, object.areaOfRectangle());
+        }
 
+        @DisplayName("Area of Rectangle with Negative Dimensions")
+        @Test
+        void toImplementAreaOfRectangleWithNegativeDimensions() {
+            SquareAndRectangleMain object = new SquareAndRectangleMain(-4, -5);
+            assertEquals(20, object.areaOfRectangle());
+        }
+
+        @DisplayName("Area of Rectangle with Positive Length and Negative Width")
+        @Test
+        void toImplementAreaOfRectangleWithPositiveLengthAndNegativeWidth() {
+            SquareAndRectangleMain object = new SquareAndRectangleMain(4, -5);
+            assertEquals(-20, object.areaOfRectangle());
+        }
+
+        @DisplayName("Area of Rectangle with Negative Length and Positive Width")
+        @Test
+        void toImplementAreaOfRectangleWithNegativeLengthAndPositiveWidth() {
+            SquareAndRectangleMain object = new SquareAndRectangleMain(-4, 5);
+            assertEquals(-20, object.areaOfRectangle());
+        }
+
+
+    }
 }

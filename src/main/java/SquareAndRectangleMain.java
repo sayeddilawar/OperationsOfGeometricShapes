@@ -12,4 +12,17 @@ public class SquareAndRectangleMain {
     {
         return 4*side;
     }
+
+    //Rectangle Operation
+    int length;
+    int width;
+    public SquareAndRectangleMain(int length,int width)
+    {
+        this.length=length;
+        this.width=width;
+    }
+
+    public int areaOfRectangle() {
+        return length*width;
+    }
 }
