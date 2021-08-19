@@ -25,4 +25,8 @@ public class SquareAndRectangleMain {
     public int areaOfRectangle() {
         return length*width;
     }
+
+    public int perimeterOfRectangle() {
+        return 2*(length+width);
+    }
 }

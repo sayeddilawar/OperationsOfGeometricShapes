@@ -83,6 +83,32 @@ public class SquareAndRectangleTest {
             assertEquals(-20, object.areaOfRectangle());
         }
 
+        @DisplayName("Perimeter of Rectangle with Positive Dimensions ")
+        @Test
+        void toImplementPerimeterOfRectangleWithPositiveDimensions() {
+            SquareAndRectangleMain object = new SquareAndRectangleMain(6, 4);
+            assertEquals(20, object.perimeterOfRectangle());
+        }
 
+        @DisplayName("Perimeter of Rectangle with Negative Dimensions ")
+        @Test
+        void toImplementPerimeterOfRectangleWithNegativeDimensions() {
+            SquareAndRectangleMain object = new SquareAndRectangleMain(-6, -4);
+            assertEquals(-20, object.perimeterOfRectangle());
+        }
+
+        @DisplayName("Perimeter of Rectangle with Positive Length and Negative Width ")
+        @Test
+        void toImplementPerimeterOfRectangleWithPositiveLengthAndNegativeWidth() {
+            SquareAndRectangleMain object = new SquareAndRectangleMain(6, -4);
+            assertEquals(4, object.perimeterOfRectangle());
+        }
+
+        @DisplayName("Perimeter of Rectangle with Negative Length and Positive Width ")
+        @Test
+        void toImplementPerimeterOfRectangleWithNegativeLengthAndPositiveWidth() {
+            SquareAndRectangleMain object = new SquareAndRectangleMain(-6, 4);
+            assertEquals(-4, object.perimeterOfRectangle());
+        }
     }
 }
